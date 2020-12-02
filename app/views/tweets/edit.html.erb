@@ -1,0 +1,16 @@
+<span style="color: red;">
+<% if @tweet.errors.present? %>
+  <h3>エラー</h3>
+  <ul>
+    <% @tweet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+</span>
+
+<%= form_for @tweet , url: {action: :update} do |f| %>
+    <%= f.label :message, 'つぶやき:' %>
+    <%= f.text_field :message %>
+    <%= f.submit 'つぶやく:' %>
+<% end %>

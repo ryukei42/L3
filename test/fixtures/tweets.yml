@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message: MyString
+  tdate: 2020-11-03 19:47:39
+
+two:
+  message: MyString
+  tdate: 2020-11-03 19:47:39
